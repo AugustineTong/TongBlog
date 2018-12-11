@@ -125,15 +125,59 @@ Su Mo Tu We Th Fr Sa
 bc
 
 坑：Docker中的Centos镜像最开始并没有bc，需要自己安装
-yum install bc
-yum install man
 
+yum install man
+yum install bc
+
+bc计算器里面，运算符
+
++
+-
+*
+/
+^ 指数
+% 余数
+
+预设10 / 100 = 0
+可以先执行
+scale = 3
+这样结果均为三位小数
+
+</pre>
+
+### Linux 重要热键
+
+<pre>
+    
+ca [tab][tab]
+
+发现会显示所有以ca开头的指令
+两次tab如果在command后面，那就代表着【命令补齐】
+
+ls -al ~/.bash  [tab][tab]
+在该目录下面所有以 .bash 为开头的文件名都会被显示出来
+两次tab如果在文件名后面，那就是【文件补齐】
+
+坑：Docker中的Centos镜像最开始并没有bash-completion ，需要自己安装
+
+yum install bash-completion 
+
+两次tab也可能是【参数补齐】
+
+
+[Ctrl]-c
+中断目前程序
+
+[Ctrl]-d
+键盘输入结束EOF
+可取代exit
 
 
 </pre>
 
 
-
+## Docker 容器操作
+例如刚才已经yum install 了，如果不保存结果，那么下次会要
 
 
 
