@@ -276,25 +276,52 @@ mkdir -m 711 test2
 ls -ld test*
 来查看mkdir的权限
 
+
+rmdir [-p] 目录名称
+删除一个空目录
+
 ls -ld test*
 查看有多少目录存在
 
+rmdir test2
+可以，test2为空
 
+rmdir test1
+不行，里面非空
 
-rmdir
-删除一个空目录
+rmdir -p test1/test2/test3/test4
+
+ls -ld test*
 
 </pre>
 
+## 执行文件路径的变量
+
+<pre>
+su -
+转到管理员权限
+
+echo $PATH
+输出PATH
+
+PATH="${PATH}:/root"
+增加一条PATH
+
+echo $PATH
+输出PATH
+
+每个目录中间用冒号(:)来隔开， 每个目 录是有『顺序』之分的
+
+
+ls -al ~
+将家目录下的所有文件列出来(含属性与隐藏文件)
+
+ls -alF --color=never ~
+不显示颜色，但在文件名末显示出该文件名代表的类型(type)
 
 
 
-
-
-
-
-
-
+</pre>
 
 
 
