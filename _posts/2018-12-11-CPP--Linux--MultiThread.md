@@ -3,7 +3,7 @@ layout:     post
 
 title:      CPP--Linux--MultiThread
 
-date:       2018-12-11
+date:       2018-12-12
 
 author:     Augustine Tong
 
@@ -109,9 +109,23 @@ pFoo->observe(s);  // 二段式构造，或者直接写 s->register_(pFoo);
 而析构函数破坏了这一假设，它会把mutex成员变量销毁掉。  
 
 ### mutex不是办法
-mutex只能保证函数一个接一个的执行
+mutex只能保证函数一个接一个的执行，考虑下面的代码，它试图用互斥锁来保护析构函数：
+<pre>
+Foo::~Foo()
+{
+    MutexLockGuard lock(mutex_);
+    // free internal state (1)
+}
 
+void Foo::update() 
+{
+    MutexLockGuard lock(mutex_);
+    // make use of internal state (2)
+}
 
+</pre>
+
+此时，有A、B两个线程都能看到Foo对象x，线程A即将销毁x，而线程B正准备调用x->update()
 
 
 
