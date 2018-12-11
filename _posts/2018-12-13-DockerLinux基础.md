@@ -214,9 +214,76 @@ docker image rm 容器名/id
 ## Linux
 
 <pre>
-    
 
-    
+date --help
+可以把使用的指令的用法做一个大致的了解
+
+回到Mac的$界面后
+可以输入
+man date
+
+进入manual后
+输入/date
+即可搜索所有的date关键字
+
+cd [相对路径/绝对路径]
+变换目录
+
+cd ~augu
+去到augu这个用户的家目录，即/home/augu
+
+cd
+cd ~
+回到自己的家目录，即/root 这个目录
+
+cd ..
+回到上层的目录
+
+cd /var/spool/mail
+
+cd ../postfix
+
+pwd
+显示当前目录
+
+cd /var/mail
+
+pwd
+/var/mail
+
+pwd -P
+/var/spool/mail
+
+加上 pwd -P 的选项后，会不以连结文件的数据显示，而是显示正确的完整路径
+
+mkdir 
+mkdir [-mp] 目录名称
+-m :配置文件案的权限，直接设定，不需要看预设权限
+-p :帮助你直接将所需要的目录(包含上层目录)递归建立起来
+
+cd /tmp
+mkdir test
+mkdir test1/test2/test3/test4
+mkdir: cannot create directory ‘test1/test2/test3/test4’: No such file or directory
+
+mkdir -p test1/test2/test3/test4
+加了这个 -p 的选项，可以自行帮你建立多层目录
+
+
+mkdir -m 711 test2
+如果没有加上 -m 来强制设定属性，系统会使用默认属性
+我们给予 -m 711 来给予新的目录 drwx--x--x 的权限
+ls -ld test*
+来查看mkdir的权限
+
+ls -ld test*
+查看有多少目录存在
+
+
+
+rmdir
+删除一个空目录
+
 </pre>
 
 
