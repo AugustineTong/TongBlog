@@ -70,6 +70,64 @@ date // 显示日期和时间
 Date // 找不到命令
 DATE // 找不到命令 
 
+date
+Tue Dec 11 11:46:20 UTC 2018
+
+date +%Y/%m/%d
+2018/12/11
+
+date +%H:%M
+11:46
+
+注意，仅CentOS中
+显示日历
+
+cal
+
+
+    December 2018   
+Su Mo Tu We Th Fr Sa
+                   1
+ 2  3  4  5  6  7  8
+ 9 10 11 12 13 14 15
+16 17 18 19 20 21 22
+23 24 25 26 27 28 29
+30 31
+
+
+cal 2018
+
+       October               November               December      
+Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa   Su Mo Tu We Th Fr Sa
+    1  2  3  4  5  6                1  2  3                      1
+ 7  8  9 10 11 12 13    4  5  6  7  8  9 10    2  3  4  5  6  7  8
+14 15 16 17 18 19 20   11 12 13 14 15 16 17    9 10 11 12 13 14 15
+21 22 23 24 25 26 27   18 19 20 21 22 23 24   16 17 18 19 20 21 22
+28 29 30 31            25 26 27 28 29 30      23 24 25 26 27 28 29
+                                              30 31
+
+
+
+cal [month] [year]
+
+cal 2 2019
+
+    February 2019   
+Su Mo Tu We Th Fr Sa
+                1  2
+ 3  4  5  6  7  8  9
+10 11 12 13 14 15 16
+17 18 19 20 21 22 23
+24 25 26 27 28
+
+简单好用的计算器bc
+
+bc
+
+坑：Docker中的Centos镜像最开始并没有bc，需要自己安装
+yum install bc
+yum install man
+
 
 
 </pre>
