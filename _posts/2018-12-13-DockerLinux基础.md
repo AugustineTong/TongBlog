@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Docker基本使用指南
+title:      Docker--Linux--基础
 
 date:       2018-12-13
 
@@ -13,9 +13,10 @@ catalog: true
 
 tags:
     - Docker
+    - Linux
 ---
 
-# Docker基本使用指南
+# Docker--Linux--基础
 **代码均为自己手打过一次, 输出结果均为自己的输出结果**.  
 
 ## 获取镜像
@@ -44,12 +45,34 @@ docker image rm [选项] <镜像1> [<镜像2> ...]
 <pre>
 docker run ubuntu:14.04 /bin/echo 'Hello world'
 </pre>
+这跟在本地直接执行 /bin/echo 'hello world' 几乎感觉不出任何区别。  
+
+下面的命令则启动一个 bash 终端，允许用户进行交互。  
+
+<pre>
+docker run -t -i ubuntu:14.04 /bin/bash
+</pre>
+其中，-t 选项让Docker分配一个伪终端（pseudo-tty）并绑定到容器的标准输入上，-i 则让容器的标准输入保持打开。  
+
+## Linux 操作
+以ls指令列出"~"目录下的所有隐藏档与相关的文件属性，要达到这一要求需要加入 -al 这样的选项
+<pre>
+
+ls -al ~
+
+ls       -al    ~
+
+ls -a -l ~
+
+// 上面这三个指令的下达方式是一模一样的执行结果  
+
+date // 显示日期和时间
+Date // 找不到命令
+DATE // 找不到命令 
 
 
 
-
-
-
+</pre>
 
 
 
