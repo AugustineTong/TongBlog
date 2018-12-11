@@ -7,7 +7,7 @@ description: "Am I Afraid of Failure?"
 keyword: "Tong Blog, Augustine, iOS, Apple, iPhone"
 url: "augustinetong.com"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/AugustineTong/augustinetong.github.io.git" # you code repository
+github_repo: "https://github.com/AugustineTong/TongBlog.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -60,7 +60,7 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: ac6cd839f8d2e204cfd7                            #生成的clientID
   clientSecret: f5adf4b2b8f96798eaef982623a3bfd2f5584823    #生成的clientSecret
-  repo: augustinetong    #仓库名称
+  repo: TongBlog    #仓库名称
   owner: AugustineTong    #github用户名
   admin: AugustineTong
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
