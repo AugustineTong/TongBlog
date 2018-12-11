@@ -177,7 +177,47 @@ yum install bash-completion
 
 
 ## Docker 容器操作
-例如刚才已经yum install 了，如果不保存结果，那么下次会要
+例如刚才已经yum install 了，如果不保存结果，那么下次会要同样的流程再来一遍 install  
+
+最好的解决方法是保存  
+<pre>
+docker ps -l
+获取最后一次更改的容器id
+
+docker ps -a
+获取所有的容器id
+
+无需拷贝完整的id，通常来讲最开始的三至四个字母即可区分
+但是全拷贝更稳一点
+docker commit 3625ff5e4825 augu/centos
+
+但我之前已有过一个augu/centos
+为了更好地区分，最好还是去掉原来的那一个
+怎么删除容器呢
+docker container ls -a
+查看所有已创建的容器
+
+清理所有处于终止状态的容器
+docker container prune
+
+删除单独一个容器
+docker container rm 容器名/id
+
+列出本地image镜像
+docker image ls
+
+删除镜像
+docker image rm 容器名/id
+
+</pre>
+
+## Linux
+
+<pre>
+    
+
+    
+</pre>
 
 
 
