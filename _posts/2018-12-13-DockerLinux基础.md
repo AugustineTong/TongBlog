@@ -63,7 +63,7 @@ docker run -t -i ubuntu:14.04 /bin/bash
 ## Linux 操作
 以ls指令列出"~"目录下的所有隐藏档与相关的文件属性，要达到这一要求需要加入 -al 这样的选项
 
-```golang
+```shell
 ls -al ~
 
 ls       -al    ~
