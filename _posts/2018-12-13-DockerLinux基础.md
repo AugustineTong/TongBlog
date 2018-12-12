@@ -21,7 +21,7 @@ tags:
 
 ## 获取镜像
 
-
+```shell
 docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 
 - Docker 镜像仓库地址：地址的格式一般是 <域名/IP>[:端口号]。默认地址是 Docker Hub。  
@@ -43,12 +43,13 @@ docker image ls
 
 docker image rm [选项] <镜像1> [<镜像2> ...]
 
-
+```
 
 
 
 ## 操作容器
 
+```bash
 docker run ubuntu:14.04 /bin/echo 'Hello world'
 
 这跟在本地直接执行 /bin/echo 'hello world' 几乎感觉不出任何区别。  
@@ -59,6 +60,7 @@ docker run ubuntu:14.04 /bin/echo 'Hello world'
 docker run -t -i ubuntu:14.04 /bin/bash
 
 其中，-t 选项让Docker分配一个伪终端（pseudo-tty）并绑定到容器的标准输入上，-i 则让容器的标准输入保持打开。  
+```
 
 ## Linux 操作
 以ls指令列出"~"目录下的所有隐藏档与相关的文件属性，要达到这一要求需要加入 -al 这样的选项
