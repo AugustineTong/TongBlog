@@ -136,6 +136,7 @@ bc
 
 坑：Docker中的Centos镜像最开始并没有bc，需要自己安装
 
+```bash
 yum install man
 yum install bc
 
@@ -152,13 +153,13 @@ bc计算器里面，运算符
 可以先执行
 scale = 3
 这样结果均为三位小数
-
+```
 
 
 ### Linux 重要热键
 
 
-    
+```bash
 ca [tab][tab]
 
 发现会显示所有以ca开头的指令  
@@ -182,11 +183,13 @@ yum install bash-completion
 键盘输入结束EOF  
 可取代exit  
 
-
+```
 
 
 
 ## Docker 容器操作  
+
+```bash
 例如刚才已经yum install 了，如果不保存结果，那么下次会要同样的流程再来一遍 install    
 
 最好的解决方法是保存    
@@ -219,12 +222,12 @@ docker image ls
 删除镜像  
 docker image rm 容器名/id  
 
-
+```
 
 ## Linux
 
 
-
+```bash
 date --help
 可以把使用的指令的用法做一个大致的了解
 
@@ -302,12 +305,12 @@ rmdir test1
 rmdir -p test1/test2/test3/test4
 
 ls -ld test*
-
+```
 
 
 ## 执行文件路径的变量
 
-
+```bash
 su -
 转到管理员权限
 
@@ -331,7 +334,7 @@ ls -alF --color=never ~
 
 ls -al --full-time ~
 完整的呈现文件的修改时间
-
+```
 
 
 
