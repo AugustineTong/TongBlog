@@ -159,45 +159,45 @@ scale = 3
     
 ca [tab][tab]
 
-发现会显示所有以ca开头的指令
-两次tab如果在command后面，那就代表着【命令补齐】
+发现会显示所有以ca开头的指令  
+两次tab如果在command后面，那就代表着【命令补齐】  
 
-ls -al ~/.bash  [tab][tab]
-在该目录下面所有以 .bash 为开头的文件名都会被显示出来
-两次tab如果在文件名后面，那就是【文件补齐】
+ls -al ~/.bash  [tab][tab]  
+在该目录下面所有以 .bash 为开头的文件名都会被显示出来  
+两次tab如果在文件名后面，那就是【文件补齐】  
 
-坑：Docker中的Centos镜像最开始并没有bash-completion ，需要自己安装
+坑：Docker中的Centos镜像最开始并没有bash-completion ，需要自己安装  
 
 yum install bash-completion 
 
 两次tab也可能是【参数补齐】
 
 
-[Ctrl]-c
-中断目前程序
+[Ctrl]-c  
+中断目前程序  
 
-[Ctrl]-d
-键盘输入结束EOF
-可取代exit
-
-
+[Ctrl]-d  
+键盘输入结束EOF  
+可取代exit  
 
 
 
-## Docker 容器操作
-例如刚才已经yum install 了，如果不保存结果，那么下次会要同样的流程再来一遍 install  
 
-最好的解决方法是保存  
 
-docker ps -l
-获取最后一次更改的容器id
+## Docker 容器操作  
+例如刚才已经yum install 了，如果不保存结果，那么下次会要同样的流程再来一遍 install    
 
-docker ps -a
-获取所有的容器id
+最好的解决方法是保存    
 
-无需拷贝完整的id，通常来讲最开始的三至四个字母即可区分
-但是全拷贝更稳一点
-docker commit 3625ff5e4825 augu/centos
+docker ps -l  
+获取最后一次更改的容器id  
+
+docker ps -a  
+获取所有的容器id  
+
+无需拷贝完整的id，通常来讲最开始的三至四个字母即可区分  
+但是全拷贝更稳一点  
+docker commit 3625ff5e4825 augu/centos  
 
 但我之前已有过一个augu/centos
 为了更好地区分，最好还是去掉原来的那一个
