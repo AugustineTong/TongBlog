@@ -336,7 +336,116 @@ ls -al --full-time ~
 完整的呈现文件的修改时间
 ```
 
+### Copy
 
+```bash
+
+cp [-adfilprsu] source destination
+cp [options] source1 source2 source3 source4 ... directory
+
+-a : 相当于 -dr --preserve=all 的意思(常用)
+-d : 若来源文件为链接文件(link file), 则复制链接文件属性而非文件本身
+-i : 若目标文件已经存在，在覆盖时会先询问动作的进行(常用)
+-p : 连同文件的属性(权限，用户，时间)一起复制过去，而非使用默认属性(备份常用)
+-r : 递归持续复制，用于目录的复制行为(常用)
+
+1 用 root 身份，将家目录下的 .bashrc 复制到 /tmp 下，并更名为 bashrc
+cp ~/.bashrc /tmp/bashrc
+cp -i ~/.bashrc /tmp/bashrc
+重复两次动作，由于/tmp底下已经存在bashrc了，再加上 -i 选项后，
+则在覆盖前会询问使用者是否确认，可按下n 或者 y来二次确定
+
+2 变换目录到/tmp，并将/var/log/wtmp 复制到/tmp 且观察属性:
+cd /tmp
+cp /var/log/wtmp .  // 想要复制到当前目录，最后的 . 不要忘
+ls -l /var/log/wtmp wtmp
+Output:
+-rw-rw-r-- 1 root utmp 0 Dec  5 01:36 /var/log/wtmp
+-rw-r--r-- 1 root root 0 Dec 12 02:36 wtmp
+
+// 注意上面的不同之处，在不加任何选项的情况下，文件的某些属性/权限会改变
+// 这是个很重要的特性! 还有，连文件建立的时间也不一样
+// 如果你想要将文件的所有特性都一起复制过来，可以加上 -a
+
+cp -a /var/log/wtmp wtmp_2
+ls -l /var/log/wtmp wtmp_2
+
+-rw-rw-r-- 1 root utmp 0 Dec  5 01:36 /var/log/wtmp
+-rw-rw-r-- 1 root utmp 0 Dec  5 01:36 wtmp_2
+
+两个资料一模一样
+
+3 复制 /etc/ 这个目录下所有内容到 /tmp 底下
+
+cp /etc/ /tmp
+报错，目录不能直接复制
+
+cp -r /etc/ /tmp
+
+// -r 可以复制目录，但是文件和目录的权限可能会改变，
+// 所以也可以利用 cp -a /etc/ /tmp 来下达指令，尤其在备份的情况下
+
+4 将范例1复制的 bashrc 建立一个连接档
+ls -l bashrc
+
+-rw-r--r-- 1 root root 176 Dec 12 02:31 bashrc
+
+cp -s bashrc bashrc_slink
+cp -l bashrc bashrc_hlink
+ls -l bashrc*
+
+-rw-r--r-- 2 root root 176 Dec 12 02:31 bashrc
+-rw-r--r-- 2 root root 176 Dec 12 02:31 bashrc_hlink
+lrwxrwxrwx 1 root root   6 Dec 12 02:57 bashrc_slink -> bashrc
+
+-l 和 -s 都会建立连接档 link file, 
+-l 建立实体链接 hard link ， 
+-s symbolic link ， bashrc_slink 是一个快捷方式，这个快捷方式会连接到 bashrc 上去，所以你看到档名右侧有个指向->的符号
+
+bashrc_hlink 文件与 bashrc 的属性与权限完全一模一样
+第二栏的link数从1变为2
+
+5 若 ~/.bashrc 比 /tmp/bashrc 新才复制过来
+
+cp -u ~/.bashrc /tmp/bashrc
+
+-u 的特性，是在目标文件与来源文件有差异时，才会复制的
+所以常用于 备份 的工作当中
+
+6 将范例四造成的 bashrc_slink 复制成为 bashrc_slink_1 与 bashrc_slink_2
+
+cp bashrc_slink bashrc_slink_1
+cp -d bashrc_slink bashrc_slink_2
+ls -l bashrc bashrc_slink*
+
+-rw-r--r-- 2 root root 176 Dec 12 02:31 bashrc
+lrwxrwxrwx 1 root root   6 Dec 12 02:57 bashrc_slink -> bashrc
+-rw-r--r-- 1 root root 176 Dec 12 03:12 bashrc_slink_1
+lrwxrwxrwx 1 root root   6 Dec 12 03:13 bashrc_slink_2 -> bashrc
+
+原本复制的是连结档，但是却将连结档的实际文件复制过来了
+如果没有加上任何选项时，cp 复制的是源文件，而非链接文件的属性
+若要复制链接文件的属性，就得要使用 -d 的选项了!如 bashrc_slink_2 所示
+
+
+7 将家目录的 .bashrc 及 .bash_history 复制到 /tmp 底下
+
+cp ~/.bashrc ~/.bash_history /tmp
+
+可以将多个数据一次复制到同一个目录去!最后面一定是目录
+
+
+Example:
+能否使用 dmtsai 的身份，完整的复制/var/log/wtmp 文件到/tmp 底下，并更名为 dmtsai_wtmp ?
+
+cp -a /var/log/wtmp /tmp/dmtsai_wtmp
+ls -l /var/log/wtmp /tmp/dmtsai_wtmp
+
+
+
+
+
+```
 
 
 
