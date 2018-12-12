@@ -60,7 +60,7 @@ int64_t Counter::getAndIncrease() {
 
 之所以这么规定，是因为在构造函数执行期间对象还没有完成初始化，如果this被泄露(escape)给了其他对象，(其自身创建的子对象除外)，则别的线程有可能访问这个半成品对象，这会造成难以预料的后果。  
 
-<pre>
+```cpp
 // Don't do this
 class Foo : public Observer
 {
@@ -90,7 +90,7 @@ public:
 Foo* pFoo = new Foo;
 Observable* s = getSubject();
 pFoo->observe(s);  // 二段式构造，或者直接写 s->register_(pFoo);
-</pre>
+```
 
 这里也说明，二段式构造————即构造函数 + initialize()————有时候会是好办法，这虽然不符合C++教条，但是多线程下别无选择。另外，既然允许二段式构造，那么构造函数不必主动抛出异常，调用方法靠initialize()的返回值来判断对象是否构造成功，这能简化错误处理。   
 
@@ -106,7 +106,7 @@ pFoo->observe(s);  // 二段式构造，或者直接写 s->register_(pFoo);
 
 ### mutex不是办法
 mutex只能保证函数一个接一个的执行，考虑下面的代码，它试图用互斥锁来保护析构函数：
-<pre>
+```cpp
 Foo::~Foo()
 {
     MutexLockGuard lock(mutex_);  
@@ -119,10 +119,10 @@ void Foo::update()
     // make use of internal state  
 }
 
-</pre>
+```
 
 此时，有A、B两个线程都能看到Foo对象x，线程A即将销毁x，而线程B正准备调用x->update()
-<pre>
+```cpp
 extern Foo* x;
 
 // thread A
@@ -134,7 +134,7 @@ if (x)
 {
     x -> update();
 }
-</pre>  
+```  
 
 1. 线程A执行到了析构函数的(1)处，已经持有了互斥锁，即将继续往下执行。  
 2. 线程B通过了if(2)检测，阻塞在了(2)处  
@@ -149,7 +149,7 @@ if (x)
 另外，对于基类对象，那么调用到基类析构函数的时候，派生类对象的那部分已经析构了，那么基类对象拥有的MutexLock不能保护整个析构过程。  
 再说，析构过程本来也不需要保护，因为只有别的线程都访问不到这个对象时，析构才是安全的，否则就会有竞态条件发生。  
 
-<pre>
+```cpp
 
 void swap(Counter& a, Counter& b)
 {
@@ -159,11 +159,11 @@ void swap(Counter& a, Counter& b)
     a.value_ = b.value_;
     b.value_ = value;
 }
-</pre>
+```
 
 如果线程A执行swap(a, b); 而同时线程B执行swap(b, a); 就有可能死锁。
 
-<pre>
+```cpp
 
 Counter& Counter::operator=(const Counter& rhs)
 {
@@ -175,7 +175,7 @@ Counter& Counter::operator=(const Counter& rhs)
     value_ = rhs.value_;        // 改成 value_ = rhs.value()会死锁
     return *this;
 }
-</pre>
+```
 
 一个函数如果要锁住相同类型的多个对象，为了保证始终按照相同的顺序加锁，我们可以比较mutex对象的地址，始终先加锁地址较小的mutex。
 
