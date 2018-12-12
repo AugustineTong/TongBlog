@@ -63,7 +63,7 @@ docker run -t -i ubuntu:14.04 /bin/bash
 ## Linux 操作
 以ls指令列出"~"目录下的所有隐藏档与相关的文件属性，要达到这一要求需要加入 -al 这样的选项
 
-```
+```go
 ls -al ~
 
 ls       -al    ~
@@ -205,17 +205,17 @@ docker commit 3625ff5e4825 augu/centos
 docker container ls -a
 查看所有已创建的容器
 
-清理所有处于终止状态的容器
+清理所有处于终止状态的容器  
 docker container prune
 
-删除单独一个容器
-docker container rm 容器名/id
+删除单独一个容器  
+docker container rm 容器名/id  
 
-列出本地image镜像
-docker image ls
+列出本地image镜像  
+docker image ls  
 
-删除镜像
-docker image rm 容器名/id
+删除镜像  
+docker image rm 容器名/id  
 
 
 
