@@ -21,7 +21,6 @@ tags:
 
 ## 获取镜像
 
-<pre>
 
 docker pull [选项] [Docker Registry 地址[:端口号]/]仓库名[:标签]
 
@@ -44,27 +43,27 @@ docker image ls
 
 docker image rm [选项] <镜像1> [<镜像2> ...]
 
-</pre>
+
 
 
 
 ## 操作容器
-<pre>
+
 docker run ubuntu:14.04 /bin/echo 'Hello world'
-</pre>
+
 这跟在本地直接执行 /bin/echo 'hello world' 几乎感觉不出任何区别。  
 
 下面的命令则启动一个 bash 终端，允许用户进行交互。  
 
-<pre>
+
 docker run -t -i ubuntu:14.04 /bin/bash
-</pre>
+
 其中，-t 选项让Docker分配一个伪终端（pseudo-tty）并绑定到容器的标准输入上，-i 则让容器的标准输入保持打开。  
 
 ## Linux 操作
 以ls指令列出"~"目录下的所有隐藏档与相关的文件属性，要达到这一要求需要加入 -al 这样的选项
-<pre>
 
+```
 ls -al ~
 
 ls       -al    ~
@@ -74,7 +73,7 @@ ls -a -l ~
 // 上面这三个指令的下达方式是一模一样的执行结果  
 
 date // 显示日期和时间
-Date // 找不到命令
+Date // 找不到命令 
 DATE // 找不到命令 
 
 date
@@ -127,6 +126,8 @@ Su Mo Tu We Th Fr Sa
 17 18 19 20 21 22 23
 24 25 26 27 28
 
+```
+
 简单好用的计算器bc
 
 bc
@@ -150,11 +151,11 @@ bc计算器里面，运算符
 scale = 3
 这样结果均为三位小数
 
-</pre>
+
 
 ### Linux 重要热键
 
-<pre>
+
     
 ca [tab][tab]
 
@@ -180,14 +181,14 @@ yum install bash-completion
 可取代exit
 
 
-</pre>
+
 
 
 ## Docker 容器操作
 例如刚才已经yum install 了，如果不保存结果，那么下次会要同样的流程再来一遍 install  
 
 最好的解决方法是保存  
-<pre>
+
 docker ps -l
 获取最后一次更改的容器id
 
@@ -216,11 +217,11 @@ docker image ls
 删除镜像
 docker image rm 容器名/id
 
-</pre>
+
 
 ## Linux
 
-<pre>
+
 
 date --help
 可以把使用的指令的用法做一个大致的了解
@@ -300,11 +301,11 @@ rmdir -p test1/test2/test3/test4
 
 ls -ld test*
 
-</pre>
+
 
 ## 执行文件路径的变量
 
-<pre>
+
 su -
 转到管理员权限
 
@@ -331,8 +332,6 @@ ls -al --full-time ~
 
 
 
-
-</pre>
 
 
 

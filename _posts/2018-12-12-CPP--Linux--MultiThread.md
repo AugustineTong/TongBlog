@@ -19,11 +19,13 @@ tags:
 **代码均为自己手打过一次, 输出结果均为自己的输出结果**.  
 
 ## 一个线程安全的Counter示例
-<pre>
-#include <cstdint>
 
-// A thread-safe counter
-class Counter : boost::noncopyable {
+
+```c++
+#include <cstdint>  
+  
+// A thread-safe counter.  
+class Counter : boost::noncopyable {  
     // copy-ctor and assignment should be private by default for a class.
 public:
     Counter() : value_(0) {}
@@ -48,7 +50,7 @@ int64_t Counter::getAndIncrease() {
 // In a real world, atomic operations are preferred.
 // 实际项目中，这个class用原子操作更合理，这里用锁仅仅是为了举例
 
-</pre>
+```
 
 ## 对象的创建
 对象构造要做到线程安全，唯一的要求是在构造期间不要泄露this指针，即    
