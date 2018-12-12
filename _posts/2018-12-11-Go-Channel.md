@@ -26,7 +26,7 @@ tags:
 
 ## 1 Channels
 
-<pre>
+```c
 func main() {
 
     messages := make(chan string)
@@ -40,12 +40,12 @@ func main() {
 Output:  
 ping
 
-</pre>
+```
 
 
 ## 2 Channel Buffering
 
-<pre>
+```c
 func main() {
 
     messages := make(chan string, 2)
@@ -62,12 +62,12 @@ buffered
 channel
 
 
-</pre>
+```
 
 
 ## 3 Channel Buffering Deadlock
 
-<pre>
+```c
 func chanBuDeadLockF2(ch chan int){
     fmt.Println(<-ch)
 }
@@ -84,12 +84,12 @@ func main() {
 Output:  
 ERROR
 
-</pre>
+```
 
 
 ## 4 Channel Buffering Deadlock Solution
 
-<pre>
+```c
 import (
     "fmt"
     "time"
@@ -117,12 +117,12 @@ Output:
 2
 3
 
-</pre>
+```
 
 
 ## 5 Channel Range Version 1.0
 
-<pre>
+```c
 func main() {
     var ch = make(chan int, 3)
     ch <- 1
@@ -144,12 +144,12 @@ Output:
 3
 
 
-</pre>
+```
 
 
 ## 6 Channel Range Version 2.0
 
-<pre>
+```c
 func main() {
     ch := make(chan int, 3)
     ch <- 1
@@ -166,11 +166,11 @@ Output:
 1
 2
 
-</pre>
+```
 
 
 ## 7 Channel Unbuffered Deadlock
-<pre>
+```c
 func deadF1(in chan int){
     fmt.Println(<-in)
 }
@@ -185,12 +185,12 @@ func main() {
 Output:  
 ERROR
 
-</pre>
+```
 
 
 ## 8 Channel Unbuffered Deadlock Solution Version 1.0
 
-<pre>
+```c
 func chanUnSo1F1(in chan int)  {
     fmt.Println(<-in)
 }
@@ -204,12 +204,12 @@ func main() {
 Output:  
 2
 
-</pre>
+```
 
 
 ## 9 Channel Unbuffered Deadlock Solution Version 2.0
 
-<pre>
+```c
 import (
     "fmt"
     "time"
@@ -231,12 +231,12 @@ Output:
 2
 
 
-</pre>
+```
 
 
 ## 10 Deadlock
 
-<pre>
+```c
 var cha1 = make(chan int)
 var cha2 = make(chan int)
 
@@ -254,12 +254,12 @@ func main() {
 Output:  
 hello
 
-</pre>
+```
 
 
 ## 11 Foo Main
 
-<pre>
+```c
 var ch1 = make(chan int)
 // 这里只能用var， 不能用 :=
 
@@ -275,12 +275,12 @@ func main() {
 Output:  
 10
 
-</pre>
+```
 
 
 ## 12 For Deadlock
 
-<pre>
+```c
 func main() {
     ch := make(chan int)
     results := make(chan int)
@@ -306,12 +306,12 @@ func main() {
 Output:  
 ERROR
 
-</pre>
+```
 
 
 ## 13 For Deadlock Solution 1.0
 
-<pre>
+```c
 import (
     "fmt"
     "time"
@@ -353,12 +353,12 @@ re:1
 re:2
 
 
-</pre>
+```
 
 
 ## 14 For Deadlock Solution 2.0
 
-<pre>
+```c
 import (
     "fmt"
     "sync"
@@ -423,26 +423,26 @@ Output:
 re:1
 re:2
 
-</pre>
+```
 
 
 ## 15 Loop
 
-<pre>
+```c
 
 
 Output:  
 
 
-</pre>
+```
 
 
 ## 
 
-<pre>
+```c
 
 
 Output:  
 
 
-</pre>
+```
