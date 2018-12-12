@@ -37,9 +37,12 @@ ubuntu:18.04：这是指用 ubuntu:18.04 镜像为基础来启动容器。
 bash：放在镜像名后的是命令，这里我们希望有个交互式 Shell，因此用的是 bash。  
 
 <pre>
+    
 docker image ls
 docker image rm [选项] <镜像1> [<镜像2> ...]
+
 </pre>
+
 
 ## 操作容器
 <pre>
@@ -318,6 +321,10 @@ ls -al ~
 
 ls -alF --color=never ~
 不显示颜色，但在文件名末显示出该文件名代表的类型(type)
+
+ls -al --full-time ~
+完整的呈现文件的修改时间
+
 
 
 
