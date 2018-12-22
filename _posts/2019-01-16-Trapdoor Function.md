@@ -1,9 +1,9 @@
 ---
 layout:     post
 
-title:      HMAC
+title:      Trapdoor Function(TDF)
 
-date:       2018-12-30
+date:       2019-01-16
 
 author:     Augustine Tong
 
@@ -15,5 +15,5 @@ tags:
     - Crptography
 ---
 
-# Hash MAC
-Hash MAC
+# Trapdoor Function (TDF)
+TDF
