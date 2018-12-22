@@ -3,7 +3,7 @@ layout:     post
 
 title:      Sematically Secure
 
-date:       2018-12-24
+date:       2018-12-25
 
 author:     Augustine Tong
 
