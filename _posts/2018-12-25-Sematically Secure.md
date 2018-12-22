@@ -16,4 +16,9 @@ tags:
 ---
 
 # Sematically Secure
-Sematically secure
+
+
+![SemanticSecurity_def](/img/crpto/SemanticSecurity_definition.png)
+
+![ ](/img/crpto/.png)
+
