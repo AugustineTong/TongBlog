@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Discrete Logarithm problem
+title:      Discrete Logarithm Problem
 
 date:       2019-01-09
 
@@ -15,5 +15,12 @@ tags:
     - Crptography
 ---
 
-# Discrete Logarithm problem
-Discrete Logarithm problem
+# Discrete Logarithm Problem
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+

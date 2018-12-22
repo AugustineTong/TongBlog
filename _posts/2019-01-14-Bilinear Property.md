@@ -16,4 +16,11 @@ tags:
 ---
 
 # Bilinear Property
-Bilinear Property
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+

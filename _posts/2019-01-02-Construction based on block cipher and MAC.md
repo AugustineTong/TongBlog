@@ -16,4 +16,11 @@ tags:
 ---
 
 # Construction based on Block Cipher and MAC
-Construction based on Block Cipher and MAC
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+

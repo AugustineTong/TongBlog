@@ -15,5 +15,13 @@ tags:
     - Crptography
 ---
 
-# Trapdoor Function (TDF)
-TDF
+# Trapdoor Function(TDF)
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+
+

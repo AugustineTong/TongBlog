@@ -16,4 +16,11 @@ tags:
 ---
 
 # Birthday Attack
-Birthday Attack
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+

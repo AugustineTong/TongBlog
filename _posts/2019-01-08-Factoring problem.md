@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Factoring problem
+title:      Factoring Problem
 
 date:       2019-01-08
 
@@ -15,5 +15,12 @@ tags:
     - Crptography
 ---
 
-# Factoring problem
-Factoring problem
+# Factoring Problem
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+

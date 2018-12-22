@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Computational Diff-hellman problem
+title:      Computational Diff-Hellman Problem
 
 date:       2019-01-10
 
@@ -15,5 +15,12 @@ tags:
     - Crptography
 ---
 
-# Computational Diff-hellman problem
-Computational Diff-hellman problem
+# Computational Diff-Hellman Problem
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+

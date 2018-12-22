@@ -16,4 +16,11 @@ tags:
 ---
 
 # Inversion
-Inversion
+
+
+## 
+![ ](/img/crpto/.png)
+
+##
+![ ](/img/crpto/.png)
+
