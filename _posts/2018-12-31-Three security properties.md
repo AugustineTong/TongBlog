@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Three security properties
+title:      Three Security Properties
 
 date:       2018-12-31
 
@@ -15,5 +15,5 @@ tags:
     - Crptography
 ---
 
-# Three security properties
-Three security properties
+# Three Security Properties
+Three Security Properties

@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Birthday attack
+title:      Birthday Attack
 
 date:       2019-01-01
 
