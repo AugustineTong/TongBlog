@@ -32,16 +32,3 @@ tags:
 
 ## MAC_Problem2
 ![MAC_Problem2](/img/crpto/MAC_Problem2.png)
-
-##
-![ ](/img/crpto/.png)
- 
- ##
-![ ](/img/crpto/.png)
- 
-##
-![ ](/img/crpto/.png)
- 
- ##
-![ ](/img/crpto/.png)
- 

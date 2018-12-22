@@ -18,9 +18,5 @@ tags:
 # Birthday Attack
 
 
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
-
+## Birthday_Paradox
+![Birthday_Paradox](/img/crpto/Birthday_Paradox.png)

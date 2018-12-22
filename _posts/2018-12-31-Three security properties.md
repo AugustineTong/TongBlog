@@ -18,9 +18,9 @@ tags:
 # Three Security Properties
 
 
-## 
-![ ](/img/crpto/.png)
+## Determination
 
-##
-![ ](/img/crpto/.png)
+## collision
+
+## Not-inversion
 
