@@ -30,8 +30,8 @@ tags:
 ## AE
 ![AE](/img/crpto/AE.png)
 
-## 
-![ ](/img/crpto/.png)
+## Authenticity
+![Authenticity](/img/crpto/Authenticity.png)
 
 ## 
 ![ ](/img/crpto/.png)
