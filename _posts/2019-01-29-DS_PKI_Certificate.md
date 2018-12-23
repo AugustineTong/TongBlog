@@ -18,9 +18,9 @@ tags:
 # PKI_Certificate
 
 
-## 
-![ ](/img/crpto/.png)
+## PKI_Certificate
+![PKI_Certificate](/img/crpto/PKI_Certificate.png)
 
-##
-![ ](/img/crpto/.png)
+## PKI_Certificate_Problem
+![PKI_Certificate_Problem](/img/crpto/PKI_Certificate_Problem.png)
 

@@ -31,6 +31,3 @@ tags:
 
 ## DS_RSA_FDH_PKCS
 ![DS_RSA_FDH_PKCS](/img/crpto/DS_RSA_FDH_PKCS.png)
-
-## 
-![ ](/img/crpto/.png)
