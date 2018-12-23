@@ -20,12 +20,6 @@ tags:
 ## MAC_PRF
 ![MAC_PRF](/img/crpto/MAC_PRF.png)
  
- ## MACs_PRFs
+## MACs_PRFs
 ![MACs_PRFs](/img/crpto/MACs_PRFs.png)
  
-##
-![ ](/img/crpto/.png)
- 
- ##
-![ ](/img/crpto/.png)
-  
