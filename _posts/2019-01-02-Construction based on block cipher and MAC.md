@@ -32,12 +32,3 @@ tags:
 
 ## Authenticity
 ![Authenticity](/img/crpto/Authenticity.png)
-
-## 
-![ ](/img/crpto/.png)
-
-## 
-![ ](/img/crpto/.png)
-
-## 
-![ ](/img/crpto/.png)

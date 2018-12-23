@@ -21,6 +21,4 @@ tags:
 ## Diffie_Hellman_Problem
 ![Diffie_Hellman_Problem](/img/crpto/Diffie_Hellman_Problem.png)
 
-##
-![ ](/img/crpto/.png)
 
