@@ -18,8 +18,8 @@ tags:
 # Trapdoor Function(TDF)
 
 
-## 
-![ ](/img/crpto/.png)
+## TrapdoorFunctions
+![TrapdoorFunctions](/img/crpto/TrapdoorFunctions.png)
 
 ##
 ![ ](/img/crpto/.png)
