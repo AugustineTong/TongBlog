@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Inversion
+title:      Group_Inversion
 
 date:       2019-01-05
 
@@ -15,9 +15,7 @@ tags:
     - Crptography
 ---
 
-# Inversion
-
-
+# Group_Inversion
 ## GCD
 ![GCD](/img/crpto/GCD.png)
 
