@@ -18,9 +18,5 @@ tags:
 # IB_Scheme_Model
 
 
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
-
+## IB_Scheme_Model
+![IB_Scheme_Model](/img/crpto/IB_Scheme_Model.png)
