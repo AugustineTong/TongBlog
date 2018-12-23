@@ -16,4 +16,4 @@ tags:
 ---
 
 # Point Doubling
-
+P

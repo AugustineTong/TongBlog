@@ -21,7 +21,5 @@ tags:
 ## TrapdoorFunctions
 ![TrapdoorFunctions](/img/crpto/TrapdoorFunctions.png)
 
-##
-![ ](/img/crpto/.png)
-
-
+## Secure_TDF
+![Secure_TDF](/img/crpto/Secure_TDF.png)
