@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Modern Version
+title:      Elgammal_Modern_Version
 
 date:       2019-01-19
 
@@ -15,8 +15,7 @@ tags:
     - Crptography
 ---
 
-# Modern Version
-
+# Elgammal_Modern_Version
 ## ElGamal_Modern_Parts
 ![ElGamal_Modern_Parts](/img/crpto/ElGamal_Modern_Parts.png)
 
