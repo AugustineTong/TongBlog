@@ -16,8 +16,6 @@ tags:
 ---
 
 # CCA
-
-
 ## PubKey_CCA
 ![PubKey_CCA](/img/crpto/PubKey_CCA.png)
 

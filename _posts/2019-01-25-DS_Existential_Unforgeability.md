@@ -26,6 +26,3 @@ tags:
 
 ## DS_EU_Problem
 ![DS_EU_Problem](/img/crpto/DS_EU_Problem.png)
-
-## 
-![ ](/img/crpto/.png)
