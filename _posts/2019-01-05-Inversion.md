@@ -33,6 +33,8 @@ tags:
 ## Fermat_Theorem
 ![Fermat_Theorem](/img/crpto/Fermat_Theorem.png)
 
-## 
-![ ](/img/crpto/.png)
+## Cyclic_Group
+![Cyclic_Group](/img/crpto/Cyclic_Group.png)
 
+## Generator
+![Generator](/img/crpto/Generator.png)
