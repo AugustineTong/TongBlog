@@ -17,10 +17,11 @@ tags:
 
 # Point Adding
 
+## Picture
+![PointAdding](/img/crpto/PointAdding.png)
 
-## 
-![ ](/img/crpto/.png)
+## EC_Adding_Algebraically
+![EC_Adding_Algebraically](/img/crpto/EC_Adding_Algebraically.png)
 
-##
-![ ](/img/crpto/.png)
-
+## PointAdding_Example
+![PointAdding_Example](/img/crpto/PointAdding_Example.png)

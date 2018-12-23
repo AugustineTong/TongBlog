@@ -53,6 +53,6 @@ Euler's generalization of Fermat is Basis of RSA cryptosystem.
 ![Modular_eth_root](/img/crpto/Modular_eth_root.png)
 
 ## Calculate_eth_root
-let d be the inverse of e modulo p-1
+let d be the inverse of e modulo p-1.
 ![Calculate_eth_root](/img/crpto/Calculate_eth_root.png)
 
