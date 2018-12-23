@@ -16,8 +16,6 @@ tags:
 ---
 
 # Feistel Structure
-
-
 ## FeistelNetwork
 ![FeistelNetwork](/img/crpto/FeistelNetwork.png)
 
