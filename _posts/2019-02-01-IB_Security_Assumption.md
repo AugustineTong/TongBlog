@@ -18,9 +18,5 @@ tags:
 # IB_Security_Assumption
 
 
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
-
+## IB_Security_Assumption
+![IB_Security_Assumption](/img/crpto/IB_Security_Assumption.png)
