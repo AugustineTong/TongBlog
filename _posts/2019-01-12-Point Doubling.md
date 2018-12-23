@@ -17,10 +17,3 @@ tags:
 
 # Point Doubling
 
-
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
-

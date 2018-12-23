@@ -17,10 +17,5 @@ tags:
 
 # BDH Problem
 
-
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
-
+## BDHP
+![BDHP](/img/crpto/BDHP.png)

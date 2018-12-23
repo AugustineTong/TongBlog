@@ -18,9 +18,5 @@ tags:
 # Bilinear Property
 
 
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
-
+## Bilinear_Property
+![Bilinear_Property](/img/crpto/Bilinear_Property.png)
