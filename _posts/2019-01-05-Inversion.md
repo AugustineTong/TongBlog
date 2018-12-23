@@ -18,9 +18,21 @@ tags:
 # Inversion
 
 
-## 
-![ ](/img/crpto/.png)
+## GCD
+![GCD](/img/crpto/GCD.png)
 
-##
+## Modular_Inversion
+![Modular_Inversion](/img/crpto/Modular_Inversion.png)
+
+## Inversion_Lemma
+![Inversion_Lemma](/img/crpto/Inversion_Lemma.png)
+
+## Invertible
+![Invertible](/img/crpto/Invertible.png)
+
+## Fermat_Theorem
+![Fermat_Theorem](/img/crpto/Fermat_Theorem.png)
+
+## 
 ![ ](/img/crpto/.png)
 
