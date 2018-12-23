@@ -18,8 +18,8 @@ tags:
 # Computational Diff-Hellman Problem
 
 
-## 
-![ ](/img/crpto/.png)
+## Diffie_Hellman_Problem
+![Diffie_Hellman_Problem](/img/crpto/Diffie_Hellman_Problem.png)
 
 ##
 ![ ](/img/crpto/.png)
