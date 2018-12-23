@@ -24,8 +24,8 @@ tags:
 ## Modular_Inversion
 ![Modular_Inversion](/img/crpto/Modular_Inversion.png)
 
-## Inversion_Lemma
-![Inversion_Lemma](/img/crpto/Inversion_Lemma.png)
+## Inversion_Find
+![Inversion_Find](/img/crpto/Inversion_Find.png)
 
 ## Invertible
 ![Invertible](/img/crpto/Invertible.png)
@@ -38,3 +38,6 @@ tags:
 
 ## Generator
 ![Generator](/img/crpto/Generator.png)
+
+## Order
+![Order](/img/crpto/Order.png)
