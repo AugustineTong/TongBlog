@@ -16,11 +16,6 @@ tags:
 ---
 
 # Factoring Problem
-
-
-## 
-![ ](/img/crpto/.png)
-
-##
-![ ](/img/crpto/.png)
+## Factor
+![Factor](/img/crpto/Factor.png)
 
