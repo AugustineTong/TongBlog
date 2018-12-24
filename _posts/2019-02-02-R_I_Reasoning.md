@@ -16,6 +16,7 @@ tags:
 ---
 
 # R_I_Reasoning
+Reasoning and learning are both aspects of what is considered about intelligence and are often interdependent.<br>
  Reasoning has been classified as classical or symbolic AI.<br>
 Learning has been a topic of machine learning and neural networks in the area of computational intelligence.
 
