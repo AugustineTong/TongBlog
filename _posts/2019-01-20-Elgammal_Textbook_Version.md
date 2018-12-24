@@ -1,7 +1,7 @@
 ---
 layout:     post
 
-title:      Textbook Version
+title:      Elgammal_Textbook_Version
 
 date:       2019-01-20
 
@@ -15,9 +15,7 @@ tags:
     - Crptography
 ---
 
-# Textbook Version
-
-
+# Elgammal_Textbook_Version
 ## ElGamal_Procedure
 ![ElGamal_Procedure](/img/crpto/ElGamal_Procedure.png)
 
