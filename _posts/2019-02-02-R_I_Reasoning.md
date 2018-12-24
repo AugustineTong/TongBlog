@@ -16,6 +16,9 @@ tags:
 ---
 
 # R_I_Reasoning
+ Reasoning has been classified as classical or symbolic AI.<br>
+Learning has been a topic of machine learning and neural networks in the area of computational intelligence.
+
 ## Deductive reasoning
 A form of reasoning in which a conclusion follows logically and coherently from the factual premises and proposition. <br>
 ### Example:
